@@ -1,2 +1,2 @@
 # jump-and-the-maytals
-Phaser test project
+Phaser3 test project
