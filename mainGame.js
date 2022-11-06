@@ -142,7 +142,6 @@ export default class MainGame extends Phaser.Scene {
   }
 
   update() {
-    console.log('vamos');
     if (this.cursors.left.isDown) {
       this.player.setVelocityX(-160);
 
@@ -157,7 +156,7 @@ export default class MainGame extends Phaser.Scene {
       this.player.anims.play('turn');
     }
 
-    if (this.cursors.up.isDown && this.player.body.touching.down) {
+    if (this.cursors.space.isDown && this.player.body.touching.down) {
       this.player.setVelocityY(-330);
       this.jumpSound.play();
     }
